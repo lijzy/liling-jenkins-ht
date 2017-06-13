@@ -19,3 +19,4 @@ RUN rm -rf ROOT.war
 
 expose 8080
 CMD ["/usr/local/src/apache-tomcat-7.0.55/bin/catalina.sh", "run"]
+
