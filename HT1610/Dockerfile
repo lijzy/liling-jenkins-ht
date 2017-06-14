@@ -12,7 +12,7 @@ ENV CATALINA_HOME=/home/app/apache-tomcat-7.0.55
 RUN rm -rf $CATALINA_HOME/webapps/*
 
 #deploy the war
-COPY ./HT1610/target/HT1610-0.0.1-SNAPSHOT.war $CATALINA_HOME/webapps/ROOT/ROOT.war
+COPY ./target/HT1610-0.0.1-SNAPSHOT.war $CATALINA_HOME/webapps/ROOT/ROOT.war
 WORKDIR $CATALINA_HOME/webapps/ROOT
 RUN jar xvf ROOT.war
 RUN rm -rf ROOT.war
