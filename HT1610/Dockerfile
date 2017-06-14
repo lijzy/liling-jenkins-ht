@@ -18,5 +18,5 @@ RUN jar xvf ROOT.war
 RUN rm -rf ROOT.war
 
 #expose 8080
-CMD ["/usr/local/src/apache-tomcat-7.0.55/bin/catalina.sh", "run"]
+CMD ["/home/app/apache-tomcat-7.0.55/bin/catalina.sh", "run"]
 
